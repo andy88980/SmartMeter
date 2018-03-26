@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andyshi.smartmeter.HistroyDataActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/boder">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkBlue"
+            android:text="歷史用電"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/LightBlue" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_rms"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_deviicename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:paddingRight="15dp"
+            android:text="設備："
+            android:textAlignment="viewEnd"
+            android:textColor="@color/DarkSlateGray"
+            android:textSize="25sp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
